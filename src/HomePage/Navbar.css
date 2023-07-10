@@ -1,0 +1,21 @@
+.desc {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+  color: black;
+}
+
+h4 {
+  line-height: 1.5;
+  color: black;
+}
+.profile-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+}
