@@ -116,9 +116,7 @@ function ScrollspyExample() {
                 in building robust and scalable web applications using the
                 powerful combination of MongoDB, Express.js, React.js, and
                 Node.js. With a solid understanding of front-end and back-end
-                development, I have a passion for creating dynamic and
-                user-friendly interfaces that provide exceptional user
-                experiences.
+                development.
               </h4>
             </Col>
             <Col>
@@ -137,7 +135,12 @@ function ScrollspyExample() {
         <ProjectDetails />
         <h4 id="experience"></h4>
         <Experience />
-        <h4 id="contact"></h4>
+        <h4
+          id="contact"
+          style={{ textDecoration: "underline", borderBottomColor: "red" }}
+        >
+          Contact
+        </h4>
         <ContactForm />
       </div>
     </div>

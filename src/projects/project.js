@@ -23,42 +23,37 @@ const ProjectDetails = () => {
     // Add more projects as needed
   ];
   return (
-    <section id="projects" className="project-section">
-      <div className="container">
-        <h2 style={{ color: "darkBlue", textDecoration: "underline" }}>
-          My Projects
-        </h2>
-        <div className="project-grid">
-          {projects.map((project, index) => (
-            <div className="project-card" key={index}>
-              <div className="project-image">
-                <img src={project.image} alt={project.title} />
-              </div>
-              <div className="project-details">
-                <h3>{project.title}</h3>
-                <p style={{ color: "black" }}>{project.description}</p>
-                <div className="project-links">
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    App
-                  </a>
-                  <a
-                    href={project.sourceLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Link
-                  </a>
+    <div className="projects-section-wrapper">
+      <section id="projects" className="project-section">
+        <div className="container">
+          <h2 style={{ color: "darkBlue", textDecoration: "underline" }}>
+            My Projects
+          </h2>
+          <div className="project-grid">
+            {projects.map((project, index) => (
+              <div className="project-card" key={index}>
+                <div className="project-image">
+                  <img src={project.image} alt={project.title} />
+                </div>
+                <div className="project-details">
+                  <h3>{project.title}</h3>
+                  <p style={{ color: "black" }}>{project.description}</p>
+                  <div className="project-links">
+                    <a
+                      href={project.sourceLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Link
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
