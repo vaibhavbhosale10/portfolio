@@ -21,7 +21,7 @@ function ScrollspyExample() {
       alignItems: "center",
       justifyContent: "center",
       height: "100vh",
-      marginTop: "-5%",
+      marginTop: "-1%",
     },
     desc: {
       textAlign: "center",

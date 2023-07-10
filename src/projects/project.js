@@ -23,11 +23,7 @@ const ProjectDetails = () => {
     // Add more projects as needed
   ];
   return (
-    <section
-      style={{ marginTop: "-50px" }}
-      id="projects"
-      className="project-section"
-    >
+    <section id="projects" className="project-section">
       <div className="container">
         <h2 style={{ color: "darkBlue", textDecoration: "underline" }}>
           My Projects
