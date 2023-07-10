@@ -1,6 +1,6 @@
-.contact-section-wrapper {
+/* .contact-section-wrapper {
   width: 95vw;
-}
+} */
 
 .contact-form-container {
   display: flex;
@@ -62,7 +62,7 @@
 .link-container {
   position: absolute;
   top: 58px;
-  left: 160px;
+  left: 140px;
   right: 0;
   text-align: center;
   margin-bottom: 20px;
