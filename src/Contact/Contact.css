@@ -54,3 +54,20 @@
 .contact-form button:active {
   background-color: #111;
 }
+
+.contact-form-container {
+  position: relative;
+}
+
+.link-container {
+  position: absolute;
+  top: 58px;
+  left: 140px;
+  right: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  margin-top: 50px;
+}

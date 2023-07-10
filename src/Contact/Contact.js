@@ -17,42 +17,81 @@ const ContactForm = () => {
   return (
     <div className="contact-section-wrapper">
       <div className="contact-form-container">
-        <Link />
+        <div className="link-container">
+          <Link />
+        </div>
 
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <input
-              type="text"
-              placeholder="Your Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="email"
-              placeholder="Your Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <textarea
-              placeholder="Your Message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+        <div className="form-container">
+          {/* Rest of the form code */}
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <input
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="email"
+                placeholder="Your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <textarea
+                placeholder="Your Message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
 };
 
 export default ContactForm;
+
+{
+  /* <form className="contact-form" onSubmit={handleSubmit}>
+  <div className="form-group">
+    <input
+      type="text"
+      placeholder="Your Name"
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+      required
+    />
+  </div>
+  <div className="form-group">
+    <input
+      type="email"
+      placeholder="Your Email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      required
+    />
+  </div>
+  <div className="form-group">
+    <textarea
+      placeholder="Your Message"
+      value={message}
+      onChange={(e) => setMessage(e.target.value)}
+      required
+    />
+  </div>
+  <div className="form-group">
+    <button type="submit">Submit</button>
+  </div>
+</form>; */
+}
