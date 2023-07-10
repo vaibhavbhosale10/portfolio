@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import pp from "../images/PP.jpg";
 import "../projects/project.css";
@@ -35,46 +35,62 @@ function ScrollspyExample() {
       // Add your styles for the profile image here
     },
   };
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <div>
-      <nav id="navbar-example2" className="navbar navbar-light bg-dark px-5 ">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <a style={{ color: "white" }} className="navbar-brand" href="#">
           VB
         </a>
-        <ul className="nav nav-pills">
-          <li className="nav-item">
-            <a style={{ color: "#cccccc" }} className="nav-link" href="#home">
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              style={{ color: "#cccccc" }}
-              className="nav-link"
-              href="#projects"
-            >
-              Projects
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              style={{ color: "#cccccc" }}
-              className="nav-link"
-              href="#experience"
-            >
-              Experience
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              style={{ color: "#cccccc" }}
-              className="nav-link"
-              href="#contact"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+        <button
+          className={`navbar-toggler ${isNavOpen ? "collapsed" : ""}`}
+          type="button"
+          onClick={handleToggle}
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <a style={{ color: "#cccccc" }} className="nav-link" href="#home">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                style={{ color: "#cccccc" }}
+                className="nav-link"
+                href="#projects"
+              >
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                style={{ color: "#cccccc" }}
+                className="nav-link"
+                href="#experience"
+              >
+                Experience
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                style={{ color: "#cccccc" }}
+                className="nav-link"
+                href="#contact"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div
