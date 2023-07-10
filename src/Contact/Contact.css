@@ -1,3 +1,7 @@
+.contact-section-wrapper {
+  width: 95vw;
+}
+
 .contact-form-container {
   display: flex;
   max-width: 800px;
