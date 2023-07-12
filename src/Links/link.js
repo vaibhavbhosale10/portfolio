@@ -17,28 +17,28 @@ const Link = () => {
           href="https://www.linkedin.com/in/vaibhav-bhosale-97162b1a7/"
           id="first"
         >
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon className="linkd-icon" icon={faLinkedin} />
         </a>
         <a
           href="https://github.com/vaibhavbhosale10"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon className="git-icon" icon={faGithub} />
         </a>
         <a
           href="https://www.facebook.com/vaibhav.bhosale.1010/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faFacebook} />
+          <FontAwesomeIcon className="facebook-icon" icon={faFacebook} />
         </a>
         <a
           href="https://twitter.com/Vaibhav1078"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon className="twitter-icon" icon={faTwitter} />
         </a>
       </div>
     </>

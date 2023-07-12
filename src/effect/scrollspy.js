@@ -137,7 +137,7 @@ function ScrollspyExample() {
         <Experience />
         <h4
           id="contact"
-          style={{ textDecoration: "underline", borderBottomColor: "red" }}
+          style={{ color: "darkBlue", textDecoration: "underline" }}
         >
           Contact
         </h4>

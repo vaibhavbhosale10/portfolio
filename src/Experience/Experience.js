@@ -19,7 +19,7 @@ const Experience = () => {
       }}
     >
       <Container>
-        <h2 style={{ textDecoration: "underline", borderBottomColor: "red" }}>
+        <h2 style={{ color: "darkBlue", textDecoration: "underline" }}>
           Experience
         </h2>
 
