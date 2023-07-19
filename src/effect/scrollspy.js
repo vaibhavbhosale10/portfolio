@@ -15,6 +15,8 @@ import ProjectDetails from "../projects/project";
 import Experience from "../Experience/Experience";
 import Link from "../Links/link";
 import "./scrollspy.css";
+import { Navbar, Nav } from "react-bootstrap";
+
 import { useEffect } from "react";
 function ScrollspyExample() {
   const styles = {
@@ -38,6 +40,7 @@ function ScrollspyExample() {
   const handleToggle = () => {
     setIsNavOpen(!isNavOpen);
   };
+
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -63,63 +66,27 @@ function ScrollspyExample() {
 
   return (
     <div>
-      <nav
-        className="navbar navbar-expand-lg  sticky-top"
-        style={{ backgroundColor: "#F8F8FF" }}
-      >
-        <a style={{ color: "black" }} className="navbar-brand" href="#">
-          VB
-        </a>
-        <button
-          className={`navbar-toggler ${isNavOpen ? "collapsed" : ""}`}
-          type="button"
-          onClick={handleToggle}
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}>
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a
-                style={{ color: "black" }}
-                className="nav-link"
-                href="#home"
-                onClick={handleHomeClick}
-              >
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container fluid>
+          <Navbar.Brand href="#" style={{ color: "black" }}>
+            VB
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarScroll" onClick={handleToggle} />
+          <Navbar.Collapse
+            id="navbarScroll"
+            className={`${isNavOpen ? "show" : ""}`}
+          >
+            <Nav className="me-auto my-2 my-lg-0">
+              <Nav.Link href="#home" onClick={handleHomeClick}>
                 Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                style={{ color: "black" }}
-                className="nav-link"
-                href="#projects"
-              >
-                Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                style={{ color: "black" }}
-                className="nav-link"
-                href="#experience"
-              >
-                Experience
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                style={{ color: "black" }}
-                className="nav-link"
-                href="#contact"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+              </Nav.Link>
+              <Nav.Link href="#projects">Projects</Nav.Link>
+              <Nav.Link href="#experience">Experience</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <div
         data-bs-spy="scroll"
         data-bs-target="#navbar-example2"
