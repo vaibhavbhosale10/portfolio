@@ -5,7 +5,7 @@ import React from "react";
 import "./Navbar.css";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import pp from "../images/PP.jpg";
+import pp from "../images/PP.png";
 const NavbarHOME = () => {
   const styles = {
     home: {

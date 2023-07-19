@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import pp from "../images/PP.jpg";
+import pp from "../images/self-modified.png";
 import "../projects/project.css";
 import salon from "../images/salon.png";
 import "../Experience/Experience.css";
@@ -14,6 +14,8 @@ import ContactForm from "../Contact/Contact";
 import ProjectDetails from "../projects/project";
 import Experience from "../Experience/Experience";
 import Link from "../Links/link";
+import "./scrollspy.css";
+import { useEffect } from "react";
 function ScrollspyExample() {
   const styles = {
     home: {
@@ -25,14 +27,10 @@ function ScrollspyExample() {
     },
     desc: {
       textAlign: "center",
-      backgroundColor: "#fff",
+
       boxShadow: "0px 2px 2px rgba(0, 0, 0, 0.2)",
       padding: "20px",
       borderRadius: "4px",
-    },
-    profileImg: {
-      marginLeft: "20%",
-      // Add your styles for the profile image here
     },
   };
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -40,11 +38,36 @@ function ScrollspyExample() {
   const handleToggle = () => {
     setIsNavOpen(!isNavOpen);
   };
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    if (animate) {
+      const profileImg = document.querySelector(".profile-img");
+      const desc = document.querySelector(".desc");
+
+      profileImg.style.animation = "slideInFromRight 1s ease-in-out forwards";
+      desc.style.animation =
+        "slideInFromLeft 1s ease-in-out forwards, fadeIn 1s ease-in-out forwards";
+
+      setTimeout(() => {
+        profileImg.style.animation = "none";
+        desc.style.animation = "none";
+        setAnimate(false);
+      }, 1000);
+    }
+  }, [animate]);
+
+  const handleHomeClick = () => {
+    setAnimate(true);
+  };
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a style={{ color: "white" }} className="navbar-brand" href="#">
+      <nav
+        className="navbar navbar-expand-lg  sticky-top"
+        style={{ backgroundColor: "#F8F8FF" }}
+      >
+        <a style={{ color: "black" }} className="navbar-brand" href="#">
           VB
         </a>
         <button
@@ -58,13 +81,18 @@ function ScrollspyExample() {
         <div className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a style={{ color: "#cccccc" }} className="nav-link" href="#home">
+              <a
+                style={{ color: "black" }}
+                className="nav-link"
+                href="#home"
+                onClick={handleHomeClick}
+              >
                 Home
               </a>
             </li>
             <li className="nav-item">
               <a
-                style={{ color: "#cccccc" }}
+                style={{ color: "black" }}
                 className="nav-link"
                 href="#projects"
               >
@@ -73,7 +101,7 @@ function ScrollspyExample() {
             </li>
             <li className="nav-item">
               <a
-                style={{ color: "#cccccc" }}
+                style={{ color: "black" }}
                 className="nav-link"
                 href="#experience"
               >
@@ -82,7 +110,7 @@ function ScrollspyExample() {
             </li>
             <li className="nav-item">
               <a
-                style={{ color: "#cccccc" }}
+                style={{ color: "black" }}
                 className="nav-link"
                 href="#contact"
               >
@@ -92,7 +120,6 @@ function ScrollspyExample() {
           </ul>
         </div>
       </nav>
-
       <div
         data-bs-spy="scroll"
         data-bs-target="#navbar-example2"
@@ -110,20 +137,40 @@ function ScrollspyExample() {
             }}
           >
             <Col xs={12} className="desc" style={styles.desc}>
-              <h1 style={{ color: "darkBlue" }}>Hi, I'm Vaibhav Bhosale</h1>
-              <h4 style={{ color: "#666666" }}>
+              <h1 style={{ color: "black" }}>Hi, I'm Vaibhav Bhosale</h1>
+              <h5
+                style={{
+                  color: "white",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: "100%",
+                }}
+              >
                 Welcome to my portfolio! As a MERN stack developer, I specialize
                 in building robust and scalable web applications using the
                 powerful combination of MongoDB, Express.js, React.js, and
                 Node.js. With a solid understanding of front-end and back-end
                 development.
-              </h4>
+              </h5>
             </Col>
-            <Col>
-              <div style={styles.profileImg} className="profile-img">
+
+            <Col className="pp">
+              <div
+                className="profile-img"
+                style={{
+                  backgroundColor: "transparent",
+                }}
+              >
                 <img
                   src={pp}
-                  style={{ height: "300px", width: "300px" }}
+                  style={{
+                    height: "280px",
+                    width: "280px",
+                    marginLeft: "20%",
+                    border: "2px solid darkBlue",
+                    borderRadius: "50%",
+                  }}
                   alt=""
                 />
               </div>
@@ -135,12 +182,12 @@ function ScrollspyExample() {
         <ProjectDetails />
         <h4 id="experience"></h4>
         <Experience />
-        <h4
+        <h3
           id="contact"
           style={{ color: "darkBlue", textDecoration: "underline" }}
         >
           Contact
-        </h4>
+        </h3>
         <ContactForm />
       </div>
     </div>

@@ -7,23 +7,28 @@ import js from "../images/js-logo-png-5.png";
 import react from "../images/1611079.png";
 import mongo from "../images/free-mongodb-3629020-3030245.webp";
 import git from "../images/512x512-logo-github-icon-35.png";
+
 const Experience = () => {
   return (
     <div
+      className="maincontainer"
       style={{
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
-        overflowX: "hidden",
+        // height: "100vh",
       }}
     >
       <Container>
-        <h2 style={{ color: "darkBlue", textDecoration: "underline" }}>
+        <br />
+        <br />
+        <h2 style={{ color: "white", textDecoration: "underline" }}>
           Experience
         </h2>
 
-        <p>These are the technologies that I've worked with</p>
+        <p style={{ color: "white" }}>
+          These are the technologies that I've worked with
+        </p>
 
         <Row>
           <Col lg={6} xs={6} className="d-flex justify-content-center">

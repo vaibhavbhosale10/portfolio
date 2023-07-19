@@ -29,14 +29,14 @@
 }
 
 .contact-form input {
-  width: 400px;
+  width: 350px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 .contact-form textarea {
   height: 200px;
-  width: 400px;
+  width: 350px;
 }
 .contact-form button {
   padding: 10px 20px;
@@ -62,7 +62,7 @@
 .link-container {
   position: absolute;
   top: 58px;
-  left: 140px;
+  left: 120px;
   right: 0;
   text-align: center;
   margin-bottom: 20px;
