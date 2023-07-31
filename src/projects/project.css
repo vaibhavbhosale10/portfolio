@@ -1,4 +1,4 @@
-.project-grid {
+/* .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
@@ -9,13 +9,16 @@
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+  transform: scale(1.05); /* Adjust the scale factor as per your preference */
+/* cursor: pointer;
+} */
 
-.project-image img {
+/* .project-image img {
   width: 100%;
   height: auto;
   display: block;
@@ -69,7 +72,7 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 1rem;
 }
 
 .project-card {
@@ -104,4 +107,90 @@
 
 .project-links a:hover {
   background-color: #555;
+} */
+/* project.css */
+
+/* project.css */
+
+/* project.css */
+
+/* project.css */
+
+/* project.css */
+/* project.css */
+
+/* project.css */
+
+.projects-section-wrapper {
+  padding: 2rem 0;
+}
+
+.project-section {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  flex: 1 1 300px; /* Make each card take at least 300px width */
+  max-width: 400px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Include box-shadow transition */
+  margin-bottom: 2rem;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Pop-up effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 1rem;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: #0056b3; /* Change color on hover */
+}
+
+/* Animation for project cards on large screens */
+@media (min-width: 992px) {
+  .project-card {
+    transform: translateX(-100%);
+    animation: slideInRight 0.6s forwards;
+  }
+
+  @keyframes slideInRight {
+    to {
+      transform: translateX(0);
+    }
+  }
 }
