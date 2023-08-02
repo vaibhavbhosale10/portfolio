@@ -45,7 +45,7 @@ const Experience = () => {
             Col
             lg={3}
             md={6}
-            xs={6}
+            xs={3}
             className="d-flex justify-content-center"
           >
             <div
@@ -59,7 +59,7 @@ const Experience = () => {
               />
             </div>
           </Col>
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(cssOfficialUrl, "_blank")}
@@ -71,7 +71,7 @@ const Experience = () => {
               />
             </div>
           </Col>
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(jsOfficialUrl, "_blank")}
@@ -83,7 +83,7 @@ const Experience = () => {
               />
             </div>
           </Col>
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(reactOfficialUrl, "_blank")}
@@ -95,7 +95,7 @@ const Experience = () => {
               />
             </div>
           </Col>
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(mongoOfficialUrl, "_blank")}
@@ -107,7 +107,7 @@ const Experience = () => {
               />
             </div>
           </Col>
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(gitOfficialUrl, "_blank")}
@@ -120,7 +120,7 @@ const Experience = () => {
             </div>
           </Col>
 
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(bootstrapOfficialUrl, "_blank")}
@@ -132,7 +132,7 @@ const Experience = () => {
               />
             </div>
           </Col>
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(vscodeOfficialUrl, "_blank")}
@@ -144,7 +144,7 @@ const Experience = () => {
               />
             </div>
           </Col>
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(typescriptOfficialUrl, "_blank")}
@@ -156,7 +156,7 @@ const Experience = () => {
               />
             </div>
           </Col>
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(reduxOfficialUrl, "_blank")}
@@ -168,7 +168,7 @@ const Experience = () => {
               />
             </div>
           </Col>
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(expressOfficialUrl, "_blank")}
@@ -180,7 +180,7 @@ const Experience = () => {
               />
             </div>
           </Col>
-          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+          <Col lg={3} md={6} xs={3} className="d-flex justify-content-center">
             <div
               className="logo"
               onClick={() => window.open(postmanOfficialUrl, "_blank")}
