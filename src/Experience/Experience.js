@@ -7,87 +7,188 @@ import js from "../images/js-logo-png-5.png";
 import react from "../images/1611079.png";
 import mongo from "../images/free-mongodb-3629020-3030245.webp";
 import git from "../images/512x512-logo-github-icon-35.png";
+import bootstrap from "../images/bootstrap.png";
+import redux from "../images/redux.png";
+import Visual from "../images/visualcode.png";
+import postman from "../images/postman.png";
+import ts from "../images/typescript.png";
+import express from "../images/express.png";
 
 const Experience = () => {
+  const htmlOfficialUrl = "https://developer.mozilla.org/en-US/docs/Web/HTML";
+  const cssOfficialUrl = "https://developer.mozilla.org/en-US/docs/Web/CSS";
+  const jsOfficialUrl =
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript";
+  const reactOfficialUrl = "https://reactjs.org/docs/getting-started.html";
+  const mongoOfficialUrl = "https://docs.mongodb.com/";
+  const gitOfficialUrl = "https://docs.github.com/en";
+  const bootstrapOfficialUrl =
+    "https://getbootstrap.com/docs/5.1/getting-started/introduction/";
+  const vscodeOfficialUrl = "https://code.visualstudio.com/docs";
+  const typescriptOfficialUrl = "https://www.typescriptlang.org/docs/";
+  const reduxOfficialUrl = "https://redux.js.org/introduction/getting-started";
+  const expressOfficialUrl = "https://expressjs.com/en/starter/installing.html";
+  const postmanOfficialUrl =
+    "https://learning.postman.com/docs/getting-started/introduction/";
+
   return (
-    <div
-      className="maincontainer"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        // height: "100vh",
-      }}
-    >
-      <Container>
-        <br />
-        <br />
-        <h2 style={{ color: "white", textDecoration: "underline" }}>
+    <div className="maincontainer">
+      <Container className="subContainer">
+        <h2 style={{ color: "darkBlue", textDecoration: "underline" }}>
           Experience
         </h2>
-
-        <p style={{ color: "white" }}>
+        <p style={{ color: "black" }}>
           These are the technologies that I've worked with
         </p>
-
-        <Row>
-          <Col lg={6} xs={6} className="d-flex justify-content-center">
-            <div className="logo">
+        <Row className="project-grid">
+          <Col
+            Col
+            lg={3}
+            md={6}
+            xs={6}
+            className="d-flex justify-content-center"
+          >
+            <div
+              className="logo"
+              onClick={() => window.open(htmlOfficialUrl, "_blank")}
+            >
               <img
-                style={{ height: "180px", width: "180px" }}
+                style={{ height: "120px", width: "120px" }}
                 src={html}
-                alt=""
+                alt="HTML Logo"
               />
             </div>
           </Col>
-          <Col lg={6} xs={6} className="d-flex justify-content-center">
-            <div className="logo">
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(cssOfficialUrl, "_blank")}
+            >
               <img
-                style={{ height: "180px", width: "180px" }}
+                style={{ height: "120px", width: "120px" }}
                 src={css}
-                alt=""
+                alt="CSS Logo"
               />
             </div>
           </Col>
-        </Row>
-
-        <Row>
-          <Col lg={6} xs={6} className="d-flex justify-content-center">
-            <div className="logo">
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(jsOfficialUrl, "_blank")}
+            >
               <img
-                style={{ height: "180px", width: "180px" }}
+                style={{ height: "120px", width: "120px" }}
                 src={js}
-                alt=""
+                alt="JavaScript Logo"
               />
             </div>
           </Col>
-          <Col lg={6} xs={6} className="d-flex justify-content-center">
-            <div className="logo">
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(reactOfficialUrl, "_blank")}
+            >
               <img
-                style={{ height: "180px", width: "180px" }}
+                style={{ height: "120px", width: "120px" }}
                 src={react}
-                alt=""
+                alt="React Logo"
               />
             </div>
           </Col>
-        </Row>
-
-        <Row>
-          <Col lg={6} xs={6} className="d-flex justify-content-center">
-            <div className="logo">
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(mongoOfficialUrl, "_blank")}
+            >
               <img
-                style={{ height: "180px", width: "180px" }}
+                style={{ height: "120px", width: "120px" }}
                 src={mongo}
-                alt=""
+                alt="MongoDB Logo"
               />
             </div>
           </Col>
-          <Col lg={6} xs={6} className="d-flex justify-content-center">
-            <div className="logo">
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(gitOfficialUrl, "_blank")}
+            >
               <img
-                style={{ height: "180px", width: "180px" }}
+                style={{ height: "120px", width: "120px" }}
                 src={git}
-                alt=""
+                alt="Git Logo"
+              />
+            </div>
+          </Col>
+
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(bootstrapOfficialUrl, "_blank")}
+            >
+              <img
+                style={{ height: "120px", width: "120px" }}
+                src={bootstrap}
+                alt="Bootstrap Logo"
+              />
+            </div>
+          </Col>
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(vscodeOfficialUrl, "_blank")}
+            >
+              <img
+                style={{ height: "120px", width: "120px" }}
+                src={Visual}
+                alt="Visual Studio Code Logo"
+              />
+            </div>
+          </Col>
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(typescriptOfficialUrl, "_blank")}
+            >
+              <img
+                style={{ height: "120px", width: "120px" }}
+                src={ts}
+                alt="TypeScript Logo"
+              />
+            </div>
+          </Col>
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(reduxOfficialUrl, "_blank")}
+            >
+              <img
+                style={{ height: "120px", width: "120px" }}
+                src={redux}
+                alt="Redux Logo"
+              />
+            </div>
+          </Col>
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(expressOfficialUrl, "_blank")}
+            >
+              <img
+                style={{ height: "120px", width: "120px" }}
+                src={express}
+                alt="Express Logo"
+              />
+            </div>
+          </Col>
+          <Col lg={3} md={6} xs={6} className="d-flex justify-content-center">
+            <div
+              className="logo"
+              onClick={() => window.open(postmanOfficialUrl, "_blank")}
+            >
+              <img
+                style={{ height: "120px", width: "120px" }}
+                src={postman}
+                alt="Postman Logo"
               />
             </div>
           </Col>
@@ -98,64 +199,3 @@ const Experience = () => {
 };
 
 export default Experience;
-{
-  /* <Container
-      style={{
-        marginTop: "40px",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <h2 style={{ textDecoration: "underline", borderBottomColor: "red" }}>
-        Expierience
-      </h2>
-
-      <p>These are the technologies that i've worked with</p>
-      <Row>
-        <Col lg={4} xs={4}>
-          <div className="logo">
-            <img
-              style={{ height: "180px", width: "180px" }}
-              src={html}
-              alt=""
-            />
-          </div>
-        </Col>
-        <Col lg={4} xs={4}>
-          <div className="logo">
-            <img style={{ height: "180px", width: "180px" }} src={css} alt="" />
-          </div>
-        </Col>
-        <Col lg={4} xs={4}>
-          <div className="logo">
-            <img style={{ height: "175px", width: "175px" }} src={js} alt="" />
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col lg={4} xs={4}>
-          <div className="logo">
-            <img
-              style={{ height: "180px", width: "180px" }}
-              src={react}
-              alt=""
-            />
-          </div>
-        </Col>
-        <Col lg={4} xs={4}>
-          <div className="logo">
-            <img
-              style={{ height: "180px", width: "180px" }}
-              src={mongo}
-              alt=""
-            />
-          </div>
-        </Col>
-        <Col lg={4} xs={4}>
-          <div className="logo">
-            <img style={{ height: "180px", width: "180px" }} src={git} alt="" />
-          </div>
-        </Col>
-      </Row>
-    </Container> */
-}
