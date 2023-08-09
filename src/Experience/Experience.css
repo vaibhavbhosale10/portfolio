@@ -23,7 +23,8 @@
   justify-content: center;
 }
 .maincontainer {
-  background-image: url("../images/sample-bg.jpg");
+  /* background-color: black; */
+  /* background-image: url("../images/sample-bg.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

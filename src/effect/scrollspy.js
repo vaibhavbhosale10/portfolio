@@ -16,9 +16,13 @@ import Experience from "../Experience/Experience";
 import Link from "../Links/link";
 import "./scrollspy.css";
 import { Navbar, Nav } from "react-bootstrap";
-
 import { useEffect } from "react";
+
 function ScrollspyExample() {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const handleToggleButton = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
   const styles = {
     home: {
       display: "flex",
@@ -67,22 +71,45 @@ function ScrollspyExample() {
   return (
     <div>
       <Navbar expand="lg" className="bg-body-tertiary">
-        <Container fluid>
-          <Navbar.Brand href="#" style={{ color: "black" }}>
-            VB
+        <Container style={{ height: "60px" }} fluid>
+          <Navbar.Brand style={{ color: "black" }} href="#">
+            Vaibhav
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" onClick={handleToggle} />
           <Navbar.Collapse
             id="navbarScroll"
             className={`${isNavOpen ? "show" : ""}`}
           >
-            <Nav className="me-auto my-2 my-lg-0">
-              <Nav.Link href="#home" onClick={handleHomeClick}>
+            <Nav className="ms-auto me-3 my-2 my-lg-0">
+              <Nav.Link
+                href="#home"
+                style={{ color: "black" }}
+                onClick={handleHomeClick}
+                className="ms-3"
+              >
                 Home
               </Nav.Link>
-              <Nav.Link href="#projects">Projects</Nav.Link>
-              <Nav.Link href="#experience">Experience</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link
+                style={{ color: "black" }}
+                href="#projects"
+                className="ms-3"
+              >
+                Projects
+              </Nav.Link>
+              <Nav.Link
+                style={{ color: "black" }}
+                href="#experience"
+                className="ms-3"
+              >
+                Experience
+              </Nav.Link>
+              <Nav.Link
+                style={{ color: "black" }}
+                href="#contact"
+                className="ms-3"
+              >
+                Contact
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -104,7 +131,7 @@ function ScrollspyExample() {
             }}
           >
             <Col xs={12} className="desc" style={styles.desc}>
-              <h1 style={{ color: "black" }}>Hi, I'm Vaibhav Bhosale</h1>
+              <h1 style={{ color: "white" }}>Hi, I'm Vaibhav Bhosale</h1>
               <h5
                 style={{
                   color: "white",
@@ -114,11 +141,11 @@ function ScrollspyExample() {
                   height: "100%",
                 }}
               >
-                Welcome to my portfolio! As a MERN stack developer, I specialize
-                in building robust and scalable web applications using the
-                powerful combination of MongoDB, Express.js, React.js, and
-                Node.js. With a solid understanding of front-end and back-end
-                development.
+                Welcome to my portfolio! I'm a MERN stack developer who's great
+                at creating web apps. I'm familiar with Next.js for smart
+                front-ends, Redux for organized data, and TypeScript for strong
+                code. I focus on making user-friendly experiences and top-notch
+                solutions.
               </h5>
             </Col>
 
@@ -135,7 +162,7 @@ function ScrollspyExample() {
                     height: "280px",
                     width: "280px",
                     marginLeft: "20%",
-                    border: "2px solid darkBlue",
+                    border: "2px solid white",
                     borderRadius: "50%",
                   }}
                   alt=""
