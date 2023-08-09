@@ -71,7 +71,7 @@ function ScrollspyExample() {
   return (
     <div>
       <Navbar expand="lg" className="bg-body-tertiary">
-        <Container style={{ height: "60px" }} fluid>
+        <Container fluid>
           <Navbar.Brand style={{ color: "black" }} href="#">
             Vaibhav
           </Navbar.Brand>
