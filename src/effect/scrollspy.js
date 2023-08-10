@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import pp from "../images/self-modified.png";
-import "../projects/project.css";
 import salon from "../images/salon.png";
 import "../Experience/Experience.css";
 import html from "../images/html5-logo-31813.png";
@@ -11,12 +10,12 @@ import react from "../images/1611079.png";
 import mongo from "../images/free-mongodb-3629020-3030245.webp";
 import git from "../images/512x512-logo-github-icon-35.png";
 import ContactForm from "../Contact/Contact";
-import ProjectDetails from "../projects/project";
 import Experience from "../Experience/Experience";
 import Link from "../Links/link";
 import "./scrollspy.css";
 import { Navbar, Nav } from "react-bootstrap";
 import { useEffect } from "react";
+import ModernProjectDetails from "../modernProject/modProject";
 
 function ScrollspyExample() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -173,7 +172,7 @@ function ScrollspyExample() {
         </Container>
 
         <h4 id="projects"></h4>
-        <ProjectDetails />
+        <ModernProjectDetails />
         <h4 id="experience"></h4>
         <Experience />
         <h3

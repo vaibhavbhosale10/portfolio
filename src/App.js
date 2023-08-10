@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Homepage from "./HomePage/HomePage";
 import { Route, Routes } from "react-router-dom";
-import ProjectDetails from "./projects/project";
 import Experience from "./Experience/Experience";
 import ScrollspyExample from "./effect/scrollspy";
 import NavScrollExample from "./Navbar/Navbar";
